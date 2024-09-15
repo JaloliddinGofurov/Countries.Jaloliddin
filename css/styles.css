@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt Condensed";
   src: url("../fonts/NunitoSans7ptCondensed-Light.woff2") format("woff2"),
-      url("../fonts/NunitoSans7ptCondensed-Light.woff") format("woff");
+    url("../fonts/NunitoSans7ptCondensed-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt Condensed";
   src: url("../fonts/NunitoSans7ptCondensed-ExtraBold.woff2") format("woff2"),
-      url("../fonts/NunitoSans7ptCondensed-ExtraBold.woff") format("woff");
+    url("../fonts/NunitoSans7ptCondensed-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt Condensed";
   src: url("../fonts/NunitoSans7ptCondensed-Regular.woff2") format("woff2"),
-      url("../fonts/NunitoSans7ptCondensed-Regular.woff") format("woff");
+    url("../fonts/NunitoSans7ptCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -36,7 +36,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt Condensed";
   src: url("../fonts/NunitoSans7ptCondensed-SemiBold.woff2") format("woff2"),
-      url("../fonts/NunitoSans7ptCondensed-SemiBold.woff") format("woff");
+    url("../fonts/NunitoSans7ptCondensed-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -57,7 +57,7 @@ html {
   box-sizing: inherit;
 }
 
-  body {
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -69,7 +69,7 @@ html {
   background-color: var(--body-bg);
   color: var(--text-color);
   transition: background-color 0.4s ease,
-  color 0.4s ease;
+    color 0.4s ease;
 }
 
 img {
@@ -87,6 +87,7 @@ a {
   --element-bg: #2B3844;
   --text-color: #fff;
 }
+
 /* CONTAINER */
 .container {
   width: 100%;
@@ -112,23 +113,28 @@ a {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
   white-space: nowrap;
 }
+
 .site-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .site-header-logo {
   font-size: 24px;
   line-height: normal;
   font-weight: 800;
   color: var(--text-color);
 }
+
 .site-header-logo:hover {
   opacity: 0.8;
 }
+
 .site-header-logo:active {
   opacity: 0.6;
 }
+
 .site-header-theme-toggler {
   padding: 0;
   border: 0;
@@ -136,16 +142,20 @@ a {
   color: var(--text-color);
   cursor: pointer;
 }
+
 .site-header-theme-toggler:hover {
   opacity: 0.8;
 }
+
 .site-header-theme-toggler:active {
   opacity: 0.6;
 }
+
 .site-header-theme-toggler-inner {
   display: flex;
   align-items: center;
 }
+
 .site-header-theme-toggler-text {
   margin-left: 8px;
   font-size: 16px;
@@ -158,7 +168,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 48px;
 }
+
 .filters-search-input {
   min-width: 480px;
   padding: 18px 74px;
@@ -168,6 +180,7 @@ a {
   color: var(--text-color);
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.6);
 }
+
 .filters-region-select {
   min-width: 200px;
   padding: 18px 24px;
@@ -176,4 +189,75 @@ a {
   background-color: var(--element-bg);
   color: var(--text-color);
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.6);
+}
+
+/* INDEX-COUNTRIES */
+.index-countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -75px;
+  margin-bottom: -75px;
+  list-style: none;
+}
+
+.index-countries-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 75px);
+  margin-left: 75px;
+  margin-bottom: 75px;
+}
+
+/* INDEX COUNTRY */
+.index-country {
+  flex-grow: 1;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+.index-country-flag {
+  flex-grow: 1;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.index-country-info {
+  padding: 24px 24px 48px;
+}
+
+.index-country-name {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+}
+.index-country-link {
+  color: var(--text-color);
+}
+
+.index-country-deteils {
+  margin: 0;
+}
+
+.index-country-deteils-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-country-deteils-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.index-country-deteils-title {
+  font-weight: 600;
+}
+
+.index-country-deteils-value {
+  margin-left: 4px;
 }
